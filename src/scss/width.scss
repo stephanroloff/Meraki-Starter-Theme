@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+.main-container>*,
+.is-root-container>.wp-block,
+//Columns
+.is-root-container>.wp-block-columns,
+.wp-block-columns,
+.wp-block-group {
+    width: 100%;
+    max-width: $wide-width-content;
+    margin: 0 auto;
+
+    &[data-align="wide"],
+    //Define Full Width Gutenberg Blocks in Editor
+    &.alignwide {
+        //Define Wide Width Gutenberg Blocks
+        max-width: $max-width-content;
+    }
+
+    &[data-align="full"],
+    //Define Full Width Gutenberg Blocks in Editor
+    &.alignfull {
+        //Define Full Width Gutenberg Blocks
+        max-width: 100%;
+    }
+
+    //EN PERIODO DE TEST--------------------------------------------
+    &.is-reusable {
+        max-width: 100% !important;
+
+        &>* {
+            max-width: 100% !important;
+        }
+    }
+
+    //--------------------------------------------------------------
+}
+
+.main-container>* {
+    margin: 0 auto;
+    max-width: $wide-width-content;
+
+    &.alignwide {
+        //Define Wide Width Gutenberg Blocks
+        max-width: $max-width-content;
+    }
+
+    &.alignfull {
+        //Define Full Width Gutenberg Blocks
+        max-width: 100%;
+    }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    max-width: 100%;
+}

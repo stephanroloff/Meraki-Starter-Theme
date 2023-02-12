@@ -1,0 +1,17 @@
+.main-container,
+.is-root-container {
+    p {
+        font-family: $font-primary;
+        color: $grafit;
+        background-color: $transparent;
+        font-size: $font-size-quaternary;
+        // font-style: $h-font-style;
+        line-height: 1.4em;
+        font-weight: 300;
+        // text-transform: $h-text-transform;
+        letter-spacing: 0.7px;
+        margin: 0;
+        padding: 0;
+        // overflow-wrap: $h-overflow-wrap;
+    }
+}

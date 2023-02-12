@@ -1,0 +1,83 @@
+@import "variables.scss";
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+//Padding for responsive
+.main-container {
+    &>.wp-block-group {
+        @media(max-width:1200px) {
+            padding: 0 40px !important;
+        }
+    }
+
+    &>h1,
+    &>h2,
+    &>h3,
+    &>h4,
+    &>h5,
+    &>h6,
+    &>p {
+        @media(max-width:1200px) {
+            padding: 0 40px !important;
+        }
+    }
+}
+
+//Title Editor
+.edit-post-visual-editor__post-title-wrapper {
+
+    // display: none;
+    h1 {
+        color: rgb(0, 0, 0);
+        font-family: $font-primary;
+    }
+}
+
+//Global-Structure
+
+.all-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .main-container {
+        flex-grow: 1; //Avoid having a floating footer. Use the full height of the screen  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-width {
+        //Define Full Width for Header and Footer and non Blocks elements
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .container-global-max {
+            max-width: $max-width-content;
+            width: $max-width-content;
+            background-color: rgb(96, 118, 68);
+        }
+
+        .container-global-wide {
+            max-width: $wide-width-content;
+            width: $wide-width-content;
+            background-color: rgb(68, 104, 118);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import './scss/normalize.scss';
+@import './scss/variables.scss';
+@import './scss/global.scss';
+@import './scss/fonts.scss';
+@import './scss/header.scss';
+@import './scss/footer.scss';
+@import './scss/width.scss';
+@import './scss/burger-menu.scss';
+@import './scss/formular.scss';
+
+/*DEFAULT STYLE CONFIGURATION BLOCKS (VALID FOR ALL PROJECTS)*/
+@import './scss/blocks-default/media-text.scss';
+@import './scss/blocks-default/headings.scss';
+@import './scss/blocks-default/image.scss';
+@import './scss/blocks-default/paragraph.scss';
+@import './scss/blocks-default/columns.scss';
+
+/*PROJECT STYLE CONFIGURATION BLOCKS (VALID JUST FOR THIS PROJECT)*/
+@import './scss/blocks-project/paragraph.scss';
+@import './scss/blocks-project/media-text.scss';
+
+/*EXTRA STYLES NATIVE BLOCKS*/
+@import './scss/extra-styles-native-blocks/paragraph.scss';
+@import './scss/extra-styles-native-blocks/spacer.scss';
+@import './scss/extra-styles-native-blocks/headings.scss';
+@import './scss/extra-styles-native-blocks/group.scss';
+
+/*PATTERNS*/
+@import './scss/patterns/example.scss';
+
+/*REUSABLE BLOCKS*/
+@import './scss/reusable-blocks/example.scss';

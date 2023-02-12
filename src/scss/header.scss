@@ -1,0 +1,103 @@
+.header-container{
+    background-color: #C3A573;
+    height: 100px;
+    font-family: 'Roboto';
+
+    .container-global-wide{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width:1200px){
+            padding: 0 40px;
+        }
+
+        .custom-logo-link{
+            .custom-logo{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .menu-my-header-menu-container,
+        .menu{
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
+                    margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover{
+                            color:red;
+                        }
+                    }
+                    //Active State of Menu Navigation------------------
+                    &.current-menu-item{
+                        & > a{
+                            color: red;
+                        }
+                    }
+                    &:has(> ul li.current-menu-item){
+                        & > a{
+                            color: red;
+                        }
+                    }
+                    //--------------------------------------------------
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// // SUB MENU
+// .header-container{
+//     .container-global-wide{
+//         .menu-my-header-menu-container{
+//             ul{
+//                 li{
+//                     position: relative;
+
+//                     &.has-sub-menu{ // Class has to be added manually in Appearance > Menus
+//                         &:hover .sub-menu{
+//                             opacity: 1;
+//                             transition: 0.3s;
+//                         }
+//                     }
+//                     .sub-menu{
+//                         position: absolute;
+//                         left: -15px;
+//                         display: flex;
+//                         flex-direction: column;
+//                         padding: 0;
+//                         z-index: 300;
+//                         background-color: #fff;
+//                         opacity: 0;
+//                         transition: 0.3s;
+
+//                         li{
+//                             margin: 10px 15px;
+                            
+//                             &:first-child{
+//                                 margin-top: 30px;
+//                             }
+//                             a{
+//                                 margin: 20px 0;
+//                                 color: black;
+//                                 &:hover{
+//                                     color: red;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+

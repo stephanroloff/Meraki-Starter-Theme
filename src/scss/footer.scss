@@ -1,0 +1,23 @@
+.footer-container{
+    background-color: #C3A573;
+    font-family: 'Roboto';
+    
+    .container-global-wide{
+        .menu-my-footer-menu-container,
+        .menu{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:white;
+                        &:hover{
+                            color:red;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+    

@@ -1,0 +1,20 @@
+{
+  "name": "merakistarter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "wp-scripts start",
+    "start:hot": "wp-scripts start --hot",
+    "build": "wp-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^24.6.0"
+  }
+}

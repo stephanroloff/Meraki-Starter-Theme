@@ -1,0 +1,46 @@
+//Variables
+
+:root{
+
+    //Colors
+    --grafit: #454C53;
+    --apfelgrun: #AFCA0B;
+    --petrol: #14637C;
+    --hellgrau: #F6F6F6;
+    --grau: #EDEDED;
+    --dunkelgrau: #DADADA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --transparent: transparent;  
+}
+
+
+
+//Container Width
+$wide-width-content: 1120px;  //In editor: none
+$max-width-content: 1920px;   //In editor: wide
+
+//Container Colors
+$background-yellow: rgb(212, 255, 0);
+$background-blue: rgb(0, 157, 255);
+
+//Colors
+$grafit: #454C53;
+$apfelgrun: #AFCA0B;
+$petrol: #14637C;
+$hellgrau: #F6F6F6;
+$grau: #EDEDED;
+$dunkelgrau: #DADADA;
+$white: #FFFFFF;
+$black: #000000;
+$transparent: transparent;
+
+//Fonts
+$font-primary: 'Roboto';
+
+//Font Size
+$font-size-primary: 53px;
+$font-size-secondary: 40px;
+$font-size-tertiary: 22px;
+$font-size-quaternary: 20px;
+

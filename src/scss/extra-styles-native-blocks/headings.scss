@@ -1,0 +1,15 @@
+.main-container,
+.block-editor{
+    .is-style-heading-responsive-padding{
+        @media(max-width:1200px){
+            padding: 0 40px !important;
+        }
+    }
+    .is-style-word-break-responsive{
+        @media(max-width:1200px){
+            word-break: break-word;
+            padding: 0 40px !important;            
+        }
+    }
+    
+}
